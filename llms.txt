@@ -1,0 +1,82 @@
+# VULK Agent Skills
+# https://vulk.dev/skills
+#
+# These skills teach AI coding agents how to generate professional,
+# production-grade code. Based on the Agent Skills specification
+# (https://agentskills.io) and inspired by GSAP's skills pattern
+# (https://github.com/greensock/gsap-skills).
+#
+# Each skill is a focused instruction set for a specific domain.
+# Skills are loaded dynamically based on the project type and prompt.
+
+## Skills Index
+
+### vulk-design-system
+- Path: skills/design-system/SKILL.md
+- Description: Core design principles for professional, premium web applications
+- Triggers: design, premium, professional, modern, elegant, beautiful, stunning
+- Always loaded: yes
+
+### vulk-react-patterns
+- Path: skills/react-patterns/SKILL.md
+- Description: Correct React patterns for generated code
+- Triggers: react, component, hook, state, jsx
+- Always loaded: yes (for React projects)
+
+### vulk-tailwind
+- Path: skills/tailwind/SKILL.md
+- Description: Correct Tailwind CSS usage patterns including responsive design
+- Triggers: tailwind, css, style, responsive, dark mode
+- Always loaded: yes
+
+### vulk-animations
+- Path: skills/animations/SKILL.md
+- Description: Professional animation patterns using Framer Motion and CSS
+- Triggers: animation, animate, motion, transition, scroll, reveal, parallax, gsap, framer
+- Always loaded: yes (for web projects)
+
+### vulk-gsap
+- Path: skills/gsap/SKILL.md
+- Description: Official GSAP patterns — core API, ScrollTrigger, timelines, React integration
+- Triggers: gsap, greensock, scrolltrigger, scroll animation, parallax, pin, scrub, timeline animation, scroll-driven, scroll reveal, advanced animation
+- Always loaded: no
+
+### vulk-backend
+- Path: skills/backend/SKILL.md
+- Description: PostgreSQL schema, auth patterns, API design for full-stack generation
+- Triggers: backend, database, auth, login, register, api, postgresql, sql, crud, admin, dashboard
+- Always loaded: no
+
+### vulk-layouts
+- Path: skills/layouts/SKILL.md
+- Description: Professional page layouts and section patterns for landing pages
+- Triggers: landing, website, page, hero, section, footer, header, navbar, layout, corporate, portfolio, saas
+- Always loaded: no
+
+### vulk-typography
+- Path: skills/typography/SKILL.md
+- Description: Professional font pairing and typography rules
+- Triggers: font, typography, heading, serif, sans-serif, premium, elegant, corporate, luxury
+- Always loaded: no
+
+### vulk-accessibility
+- Path: skills/accessibility/SKILL.md
+- Description: Accessibility and semantic HTML patterns
+- Triggers: accessible, a11y, aria, semantic, screen reader, keyboard
+- Always loaded: no
+
+## Usage
+
+Skills are automatically loaded by the VULK agent based on prompt analysis.
+Core skills (design-system, react-patterns, tailwind) are always included.
+Optional skills are scored against the user's prompt and the top 4 matches
+are injected into the system prompt.
+
+To use these skills in your own AI agent:
+1. Read the SKILL.md files relevant to your project
+2. Inject the content into your system prompt
+3. The AI will follow the patterns described in each skill
+
+## License
+
+MIT - Free to use, modify, and redistribute.

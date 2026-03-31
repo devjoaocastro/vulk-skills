@@ -1,0 +1,35 @@
+{
+  "name": "@vulk/skills",
+  "version": "1.0.0",
+  "description": "Modular AI skills that teach coding agents to generate professional, production-grade code",
+  "author": "VULK <hello@vulk.dev> (https://vulk.dev)",
+  "license": "MIT",
+  "homepage": "https://github.com/devjoaocastro/vulk-skills#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjoaocastro/vulk-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devjoaocastro/vulk-skills/issues"
+  },
+  "keywords": [
+    "ai-skills",
+    "agent-skills",
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "code-generation",
+    "design-system",
+    "tailwind",
+    "react",
+    "gsap",
+    "animations",
+    "accessibility",
+    "typography"
+  ],
+  "files": [
+    "*/SKILL.md",
+    "llms.txt",
+    "README.md"
+  ]
+}
